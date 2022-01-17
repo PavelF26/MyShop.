@@ -6,7 +6,7 @@
           <div class="hero-caption pt-30">
             <div class="slider-content hero-text">
               
-              <a class="btn">Shop</a>
+              <a class="btn">Shop Apple</a>
             </div>
           </div>
         </div>
