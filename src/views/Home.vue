@@ -6,11 +6,14 @@
           <div class="hero-caption pt-30">
             <div class="slider-content hero-text">
               
-              <a class="btn">Shop Apple</a>
+              <a class="btn">Shop Appl</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="header-img-second">
+
     </div>
     <v-col>
    
