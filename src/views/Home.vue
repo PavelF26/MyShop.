@@ -12,13 +12,13 @@
         </div>
       </div>
     </div>
-    <div class="header-img-second">
 
     </div>
     <v-col>
    
     </v-col>
-  </div>
+    
+  
 </template>
 
 <script>
@@ -37,6 +37,10 @@ export default {
   background-size: cover;
   background-position: center;
 }
+
+
+
+
 .hero-caption {
   display: table;
   height: 100%;
