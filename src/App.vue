@@ -1,7 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <Navbar/>
   </div>
   <router-view />
   <Footer />
@@ -10,11 +9,12 @@
 
 <script>
 import Footer from './components/Footer.vue';
+import Navbar from './components/Navbar.vue';
 
 
 
 export default {
-  components: { Footer }
+  components: { Footer, Navbar }
   
 }
 </script>

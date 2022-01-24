@@ -2,7 +2,6 @@
     <header :class=" { 'scrolled-nav' : scrollPosition}">
         <nav>
             <div class="branding">
-               <img src="" alt="Apple logo">
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{name:'Home'}" >Home</router-link></li>
@@ -33,5 +32,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+header{
+    background-color: rgba(0,0,0,0.8);
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    transition: .5s ease all ;
+    color: #fff;
+    
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding: 12px 0;
+        transition: .5s ease all ;
+        width: 90%;
+        margin: 0 auto;
+        /*12:25*/
+
+        
+    }
+
+}
+
     
 </style>
