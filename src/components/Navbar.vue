@@ -11,7 +11,8 @@
                 <li><router-link class="link" :to="{name:''}" >Contact</router-link></li>
             </ul>
                 <div class="icon">
-                    <ion-icon @click="teggleMobileNav" v-show="mobile" name="menu-outline" :class=" {'icon-active' : mobileNav}"></ion-icon>
+                    <i @click="teggleMobileNav" v-show="mobile" class="far fa-bars" :class=" {'icon-active' : mobileNav}">
+                    </i>
                 </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
@@ -74,6 +75,10 @@ header{
             color: #fff;
             list-style: none;
             text-decoration: none;
+            &:hover{
+                color: silver;
+                
+            }
 
         }
 
@@ -81,16 +86,14 @@ header{
             text-transform: uppercase;
             /*padding: 16px;*/
             margin-left: 16px;
+             
         }
         .link{
             font-size: 14px;
             padding-bottom: 5px;
             transition: 0.5s ease all ;
             border-bottom: 1px solid transparent;
-            &:hover{
-                color: silver;
-                border-color: silver;
-            }
+            
 
 
         }
@@ -98,11 +101,11 @@ header{
         .branding{
             display: flex;
             align-items: center;
-            width: 10%;
+            width: 11%;
 
             img{
-                height: 65%;
-                width: 50%;
+                height: 100%;
+                width: 63%;
                 transition: 0.5s ease all ;
 
 
