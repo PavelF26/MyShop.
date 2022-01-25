@@ -1,5 +1,5 @@
 <template>
-    <header :class=" { 'scrolled-nav' : scrollPosition}">
+    <header :class=" { 'scrolled-nav' : scrolledNav}">
         <nav>
             <div class="branding">
                 <img src="../assets/img/apple-logo.jpeg" alt="">
@@ -34,11 +34,53 @@ export default {
     name:"navigation",
     data() {
         return {
-            scrollPosition:null,
+            scrolledNav:null,
             mobile:null,
             mobileNav:null,
             windowWidth:null,
         };
+    },
+
+    created(){
+        window.addEventListener('resize', this.checkScreen);
+        this.checkScreen();
+    },
+
+    updatedScroll(){
+
+        const scrollPosition = window.scrollY;
+        if(scrollPosition > 50){
+            this.scrolledNav =true;
+            return;
+                            }
+        this.scrolledNav = false;
+
+
+    },
+    mounted() {
+        window.addEventListener('scroll', this.updatedScroll);
+    },
+
+    methods:{
+        teggleMobileNav(){
+
+            this.mobileNav = !this.mobileNav
+
+        },
+
+
+        checkScreen(){
+            this.windowWidth = window.innerWidth;
+            if(this.windowWidth <=750){
+                this.mobile = true;
+                return;
+            }
+            this.mobile = false;
+            this.mobileNav = false;
+            return;
+
+        },
+
     },
     
 };
@@ -143,11 +185,60 @@ header{
         .icon-active{
             transform: rotate(180deg);
         }
+
+        .dropdown-nav{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            width: 100%;
+            max-width: 250px;
+            height: 100%;
+            background-color: #fff;
+            top: 0;
+            left: 0;
+
+            li{
+                margin-left: 0;
+                .link{
+                    color: rgb(0,0,0,);
+                }
+            }
+        }
+
+        .mobile-nav-enter-active,
+        .mobile-nav-leave-active {
+             transition: 0.5s ease all;
+        }
+
+        .mobile-nav-enter-from,
+        .mobile-nav-leave-to {
+            transform: translateX(-250px) ;
+        }
+
+        .mobile-nav-enter-to{
+            transform: translateX(0);
+        }
+        
         
     }
 
-    /*20:53*/
+}
+
+.scrolled-nav{
+    background-color: #000;
+    box-shadow: O 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px  rgba(0,0,0,0.06);
+
+    nav li{
+        padding: 8px 0;
+
+        .branding{
+            width: 40px;
+            box-shadow: O 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px  rgba(0,0,0,0.06);
+
+        }
+    }
 
 }
+
 
 </style>
