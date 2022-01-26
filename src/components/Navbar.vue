@@ -31,7 +31,7 @@
 </template>
 
 <script>
-export default {
+ export default {
     name:"navigation",
     data() {
         return {
@@ -177,8 +177,8 @@ header{
 
             i{
                 cursor: pointer;
-                font-size: 24px;
-                transition: .8s ease all;
+                font-size: 1.5em;
+                transition: 0.5s ease all;
 
             }
 
@@ -192,16 +192,22 @@ header{
             flex-direction: column;
             position: fixed;
             width: 100%;
-            max-width: 250px;
+            max-width: 300px;
             height: 100%;
-            background-color: #fff;
-            top: 0;
+            background-color: #191919;
+            top: 1.875em; 
             left: 0;
 
             li{
                 margin-left: 0;
+                //margin-bottom: 0.938em;
+                text-align: center;
+                font-size: 1.2em;
+                padding: .5rem 1rem;
+                background: #191919;
+                line-height: 24px;
                 .link{
-                    color: rgb(0,0,0,);
+                    color: rgb(241, 236, 236);
                 }
             }
         }
@@ -213,7 +219,7 @@ header{
 
         .mobile-nav-enter-from,
         .mobile-nav-leave-to {
-            transform: translateX(-250px) ;
+            transform: translateX(-300px) ;
         }
 
         .mobile-nav-enter-to{
@@ -243,4 +249,3 @@ header{
 
 
 </style>
->>>>>>> navigation
