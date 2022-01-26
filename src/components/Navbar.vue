@@ -195,19 +195,24 @@ header{
             max-width: 300px;
             height: 100%;
             background-color: #191919;
-            top: 1.875em; 
-            left: 0;
+            top: 1.6em; 
+            left: -2.5rem; /*z 0*/
 
             li{
                 margin-left: 0;
-                //margin-bottom: 0.938em;
+                margin-bottom: 0.14em;
                 text-align: center;
                 font-size: 1.2em;
                 padding: .5rem 1rem;
-                background: #191919;
+                //background: #363636;
                 line-height: 24px;
+
+                
                 .link{
                     color: rgb(241, 236, 236);
+                    border: 1px solid #363636 ;
+                    border-radius: 25px;
+                    padding: 10px;
                 }
             }
         }
