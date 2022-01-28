@@ -14,6 +14,7 @@
     </div>
 
     </div>
+    
     <v-col>
    
     </v-col>
@@ -37,8 +38,6 @@ export default {
   background-size: cover;
   background-position: center;
 }
-
-
 
 
 .hero-caption {
