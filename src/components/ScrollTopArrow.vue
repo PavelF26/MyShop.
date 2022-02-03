@@ -2,7 +2,8 @@
 
   <ScrollTopComponent>
       <a class="btn btn-light">
-        <font-awesome-icon :icon="['fas', 'angle-double-up']" size="3x" />
+        <i class="fas fa-angle-double-up fa-lg"></i>
+       <!-- <font-awesome-icon :icon="['fas', 'angle-double-up']" size="3x" />-->
       </a>
   </ScrollTopComponent>
 </template>
