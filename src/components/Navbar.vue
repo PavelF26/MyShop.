@@ -3,7 +3,10 @@
     <header :class=" { 'scrolled-nav' : scrolledNav}">
         <nav>
             <div class="branding">
+                <router-link to="/">
                 <img src="../assets/img/apple-logo.jpeg" alt="">
+                 </router-link>
+
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{name:'Home'}" >Home</router-link></li>
@@ -118,8 +121,9 @@ header{
             color: #fff;
             list-style: none;
             text-decoration: none;
-            &:hover{
+            li:hover{
                 color: silver;
+                text-decoration: underline;
                 
             }
 

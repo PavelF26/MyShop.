@@ -26,4 +26,13 @@ export default {
     padding-right: 10px;
     padding-bottom: 5px;
 }
+
+.btn:hover,
+.btn:focus{
+  background-color: silver !important;
+      
+
+
+
+}
 </style>

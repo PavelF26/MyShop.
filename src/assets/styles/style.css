@@ -83,8 +83,9 @@ p {
 .btn:hover {
     background: transparent;
     border-color: #444;
-    color: #444 !important;
-    border-radius: 20%;
+    text-decoration: underline;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 8px;
 }
 
 .btn-light {
