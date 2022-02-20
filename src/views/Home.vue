@@ -2,6 +2,7 @@
   <div>
     <div class="header-img">
       <div class="basic-slider ptb-200">
+      <p class="jkl">iPhone 13pro</p>
         <div class="container">
           <div class="hero-caption pt-30">
             <div class="slider-content hero-text">
@@ -13,6 +14,14 @@
       </div>
     </div>
 
+    </div>
+    <div class="container">
+      
+      <img class="header-img02" src="" alt="">
+      <img class="header-img02" src="" alt="">
+      <img class="header-img02" src="" alt="">
+      <img class="header-img02" src="" alt="">
+      
     </div>
     
     <v-col>
@@ -29,14 +38,38 @@ export default {
 </script>
 
 <style scoped>
+
+.container {
+  grid-template-columns: 1fr  1fr ;
+  column-gap: 10px;
+  row-gap: 15px;
+  display: grid;
+}
+
 .header-img {
   background-image: url("../assets/img/hero_iphone_13pro.jpeg");
-  height: 664px;
-  width: 100% !important;
+  height: 1020px;
+  width: 450%;
   min-width: 100% !important;
   max-width: 100% !important;
   background-size: cover;
   background-position: center;
+}
+
+.jkl{
+  font-size: 5em;
+  color: black;
+text-align: center;}
+
+.header-img02{
+    background-image: url("../assets/img/hero_watch.jpg");
+    height: 500px;
+  width: 100% ;
+  min-width: 100% ;
+  max-width: 100% ;
+  background-size: cover;
+  background-position: center;
+
 }
 
 
