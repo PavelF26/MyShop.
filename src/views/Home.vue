@@ -18,9 +18,9 @@
     <div class="container">
       
       <img class="header-img02" src="" alt="">
-      <img class="header-img02" src="" alt="">
-      <img class="header-img02" src="" alt="">
-      <img class="header-img02" src="" alt="">
+      <img class="header-img03" src="" alt="">
+      <img class="header-img04" src="" alt="">
+      <img class="header-img05" src="" alt="">
       
     </div>
     
@@ -59,16 +59,38 @@ export default {
 .jkl{
   font-size: 5em;
   color: black;
-text-align: center;}
+text-align: center;
+}
 
-.header-img02{
-    background-image: url("../assets/img/hero_watch.jpg");
-    height: 500px;
+.container img{
+   height: 500px;
   width: 100% ;
   min-width: 100% ;
   max-width: 100% ;
   background-size: cover;
   background-position: center;
+
+
+}
+
+.header-img02{
+    background-image: url("../assets/img/hero_watch.jpg");
+   
+}
+
+.header-img03{
+    background-image: url("../assets/img/macbookpro.jpg");
+   
+}
+
+.header-img04{
+    background-image: url("../assets/img/macbook_air_space.jpeg");
+   
+}
+
+.header-img05{
+    background-image: url("../assets/img/promo_watch_heart.jpg");
+   
 
 }
 
